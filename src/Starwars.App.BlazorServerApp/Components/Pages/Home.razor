@@ -1,0 +1,31 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<div class="alert alert-info">
+    <h3>Operating System</h3>
+    <p>@_operatingSystemNameAndVersion</p>
+    <p>Base URI: @NavigationManager.BaseUri</p>
+</div>
+
+<p>&nbsp;</p>
+
+@code {
+    private string PageTitle { get; set; } = "Home";
+
+    private string _operatingSystemNameAndVersion;
+    private OperatingSystem _operatingSystem;
+
+    protected override void OnInitialized()
+    {
+        _operatingSystem = Environment.OSVersion;
+        _operatingSystemNameAndVersion = $"{_operatingSystem.Platform} {_operatingSystem.Version} {System.Runtime.InteropServices.RuntimeInformation.OSDescription}";
+
+
+    }
+}
