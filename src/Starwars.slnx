@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Starwars.App.BlazorServerApp/Starwars.App.BlazorServerApp.csproj" />
+  <Project Path="Starwars.Aspire.AppHost/Starwars.Aspire.AppHost.csproj" />
+  <Project Path="Starwars.Aspire.ServiceDefaults/Starwars.Aspire.ServiceDefaults.csproj" />
+  <Project Path="Starwars.ReverseProxy/Starwars.ReverseProxy.csproj" />
+</Solution>
