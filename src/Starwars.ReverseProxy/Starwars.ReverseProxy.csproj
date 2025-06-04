@@ -10,4 +10,8 @@
     <PackageReference Include="Yarp.ReverseProxy" Version="2.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Starwars.Aspire.ServiceDefaults\Starwars.Aspire.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>
